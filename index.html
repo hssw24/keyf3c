@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de" translate="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes</title>
+    <style>
+        @keyframes drehbuch {
+            0% { background-color:mediumpurple; }
+            20% { background-color:orange; transform: translate(360px, 0); }
+            40% { background-color:yellowgreen; border-radius: 50%; transform: translate(180px, 180px); }
+            60% { background-color:deepskyblue; transform: translate(0, 180px); }
+            80% { background-color:deepskyblue; transform: translate(90px, 90px) scale(2.5) rotate(150deg); border-radius: 50%; }
+            100% { background-color:mediumpurple; }
+        }
+
+        #bereich {
+            margin: 20px;
+            width: 100px;
+            height: 100px;
+            color: white;
+            font-size: 16px;
+            line-height: 100px;
+            text-align: center;
+            animation-name: drehbuch;
+            animation-duration: 12s;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+<body>
+    <div id="bereich">3c</div>
+    <script>
+
+const namen = ["Dana", "Lucie", "Adjora", "Madina", "Rita", "Tayler", "Mirse", "Adam", "Özcan", "Leonor", "Alexander", "Vanessa", "Naima", "Mustafa", "Filiz", "Zoé", "Irem", "Marlon", "Frau Brenzel"];
+
+        let index = 0;
+
+        setInterval(() => {
+            index = (index + 1) % namen.length;
+            document.getElementById("bereich").textContent = namen[index];
+        }, 3000);
+    </script>
+</body>
+</html>

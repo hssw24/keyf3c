@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de" translate="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes</title>
+    <style>
+
+@keyframes drehbuch {
+    0% {
+        background-color:mediumpurple;
+    }
+    20% {
+        background-color:orange;
+        transform: translate(360px, 0);
+    }
+    40% {
+        background-color:yellowgreen;
+        border-radius: 50%;
+        transform: translate(180px, 180px);
+    }
+    60% {
+        background-color:deepskyblue;
+        transform: translate(0, 180px);
+    }
+    80% {
+        background-color:deepskyblue;
+        transform: translate(90px, 90px) scale(2.5) rotate(150deg);
+        border-radius: 50%;
+    }
+    100% {
+        background-color:mediumpurple;
+    }
+}
+
+#bereich{
+    margin: 20px;
+    width:  80px;
+    height: 80px;
+
+    color: white;
+    font-size: 18px;
+    line-height: 80px;
+    text-align: center;
+    animation-name: drehbuch;
+    animation-duration:12s;
+    animation-iteration-count:infinite;
+}
+
+    </style>
+</head>
+<body>
+	<div id="bereich">Selina</div>
+</body>
+</html>
+
+<*--
+const namen = ["Dominik", "Ghihan", "Gianni", "Johanna", "Karl", "Lea", "Liam", "Maksym", "Matteo", "Micele", "Mira", "Miraslawa", "Miriam", "Paul E.", "Paul F.", "Pius", "Rose", "Ryen", "Samu", "Seiff", "Selina", "Shivaay", "Teresa", "Theo", "Valerija", "Yusra"];
+-->
